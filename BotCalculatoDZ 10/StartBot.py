@@ -3,11 +3,9 @@ from telegram.ext import Updater, CommandHandler, Filters, MessageHandler, Conve
 from menuBot.function import *
 
 
-bot = Bot(token='5931424673:AAHvDu8YrD0zNlu8uGhwa87RekXrFhESuvM')
-updater = Updater(token='5931424673:AAHvDu8YrD0zNlu8uGhwa87RekXrFhESuvM')
+bot = Bot(token='Token key from the bot')
+updater = Updater(token='Token key from the bot')
 dispatcher = updater.dispatcher
-
-# Token key from the bot
 
 start_handler = CommandHandler('start', start)
 receiving_data_handler = MessageHandler(Filters.text & (~Filters.command), receiving_data)
